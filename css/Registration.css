@@ -1,0 +1,71 @@
+header{
+ border-top: 1px solid gold !important;
+ margin-top: -8px !important;
+ background-color: #FFF9C7;
+ color: white;
+ width:100%;
+ background-size: 100px 200px;
+ background-repeat: no-repeat;
+ /*padding-left:20px;*/
+ position: center;
+ text-align: center;
+ margin-right: 50px;
+ margin-left: 170px;
+ width:900px;
+
+
+}
+
+.container{
+  padding-left: 170px;
+  padding-right: 50px;
+  width: 900px;
+
+}
+input:valid {
+  background-color: lightgreen;
+}
+
+
+/*label{
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}*/
+form{
+  background-color:floralwhite;
+
+}
+
+.logo{
+float: left;
+width: 100px;
+height: 100px;
+
+}
+h6{
+  color: red;
+}
+
+label:before,.refrences p:before {
+
+   content: "* ";
+   color: red;
+}
+.references label:before,.referencename label:before, .referenceEmail label:before, .Transportation  label:before,.Physicalfit label:before {
+   display:inline-table;
+   content: "";
+}
+
+h3{
+  background-color: green;
+}
+#submit {
+   border: none;
+   border-bottom: 1px solid #666;
+   border-right: 1px solid #777;
+   padding: 0.4em 0.6em;
+   margin: 0;
+   display: inline-block;
+   background-color: #e3d5ba;
+   font-size: 1.25em;
+   border-radius: 10px;
+}

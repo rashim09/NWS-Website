@@ -1,0 +1,334 @@
+.container{
+   max-width: 100%;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   font-weight: 0;
+}
+
+@media only screen and (max-width: 700px){
+    body {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    body {
+        width: 100%;
+    }
+}
+
+body{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 0.8em;
+  background-color: floralwhite;
+  line-height: 1.6em;
+}
+
+
+/*Background Positioning*/
+header{
+ border-top: 1px solid gold !important;
+ border-bottom: : 4px solid gold !important;
+ margin-top: -8px !important;
+ background-color: #A9DFBF;
+ color: green;
+ width:100%;
+ background-image:url(/Users/rashimkaushik/Documents/Aptana\ Studio\ 3\ Workspace/Websites/images/Stick-Figure-Children.png);/*image has been added with absolute link*/
+ background-position:100%;
+ background-size: 1600px 400px;
+ background-repeat: no-repeat;
+ padding-left:20px;
+ padding-right:20px;
+ position: fixed;
+ text-align: center;
+ margin-right: auto;
+ padding-bottom: 50px;
+
+ /*margin -bottom:-8px;*/
+
+}
+
+
+h1{
+
+  style="position: relative; top: -20px;
+  left:10px;
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+h2{
+  color: #145A32;
+}
+
+.logo{
+float: left;
+width: 100px;
+height: 100px;
+padding-left: 16px;
+}
+
+.logo::after{                     /*Psedudo element is used to resolve Headbutting issue */
+  display: block;
+  content: " ";
+  visibility: hidden;
+}
+
+ul{
+
+list-style-type: none;  /*remove bullet*/
+margin-top: 147px; /*remove default browser margin*/
+padding: 0 ; /*remove default browser margin*/
+overflow: hidden;
+background-color: #239B56;
+width: 100%;
+position: fixed;
+
+}
+
+li {
+  float: left; /*float to the left to make it horizontal*/
+	border-right: 1px solid red;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover { /*  Pesudo class hover has been used in Nav bar*/
+    background-color: blue;
+    color: white;
+}
+
+aside {
+  float: right;
+  width:20%;
+  background-color: lightblue;
+  overflow: scroll;
+  border-radius: 8px;
+}
+
+#list{
+  list-style-type: circle;
+  color: red;
+}
+
+.aboutUs {                /*Extra Margin is set for First article in order to made it display after fixed position Header*/
+margin-top: 220px;
+padding: top:20px;
+}
+
+#aboutus::before{       /*Psedudo element is used to resolve Headbutting issue */
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+
+#admissions::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+
+#infrastructure::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+#Co-Curricular::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+#Academic::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+
+#executivemembers::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+
+}
+#admissionsfee::before{ /*Psedudo element is used to resolve Headbutting issue */
+
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+
+
+#contact::before{ /*Psedudo element is used to resolve Headbutting issue */
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 220px;
+  visibility: hidden;
+}
+
+#aside::before{ /*Psedudo element is used to resolve Headbutting issue */
+  display: block;
+  content: " ";
+  margin-top: -1px;
+  height: 80px;
+  visibility: hidden;
+}
+
+
+.aboutUs,.Admissions{
+  float: left;
+  width:80%;
+  background-color: floralwhite;
+
+}
+
+.Infrastructure{
+  line-height: 1.4em;
+  float: left;
+  width:80%;
+  background-color: floralwhite;
+}
+.Co-Curricular{
+  line-height: 1.4em;
+  float: left;
+  width:80%;
+  background-color: floralwhite;
+}
+.Academic{
+  line-height: 1.4em;
+  float: left;
+  width:80%;
+  background-color: floralwhite;
+}
+
+.row{
+  float:left;
+  width:80%;
+  background-color: floralwhite;
+  margin-bottom: 0.1em;
+}
+
+.col-md-4 {    /*  3 section is been introduced from 80% row with width of 33.3% */
+  float:left;
+  width: 26%;
+  border-radius: 30px;
+  margin-left: 74px;
+
+
+}
+
+
+#brochure{margin-left: 60px;} /*  setting different margin to adjust space between image & links in aside */
+#CPD{margin-left: 40px;}
+#team{ margin-left: 35px;}
+
+.links,.video{
+  padding-left: 30px;
+}
+
+.contacts {
+  background-color: floralwhite;
+  float: left;
+  width: 80%;
+  text-align:left;
+}
+
+#images{
+  margin-left: 75px;
+}
+
+.Admissionfees{
+  background-color: floralwhite;
+  float: left;
+  width: 80%;
+
+}
+
+/*  Table Formatting */
+
+section,table,td,tbody,tfoot,th,thead,tr{
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+}
+
+table{
+  width:71%;
+  height: 90%;
+  border-collapse: collapse;
+  background-color: floralwhite;
+  border-radius: 400px;
+  margin-left: 75px;
+
+}
+
+td,th{
+  border:1px solid black;
+  font-size: 1em;
+  height:40px;
+  width:20px;
+  padding-left:10px;
+
+
+}
+
+th {background-color: black;
+color: white;}
+
+#row1{
+  background-color: white;
+  text-align: center;
+}
+
+  tr.row_Junior{
+  	/*background-color: #BFC9CA;*/
+    background-color:  #FEF9E7;
+  }
+  tr.row_senior{
+  	/*background-color: #F0B27A;*/
+background-color:  #AED6F1 ;}
+  tr.Playgroup{
+  	/*background-color:#AED6F1;*/
+    background-color:  #AED6F1;
+  }
+
+
+
+footer {
+
+float:none;
+text-align: right;
+background-color: #239B56; ;
+color:floralwhite;
+clear:both;
+position: relative;
+padding-left: 50px;
+}

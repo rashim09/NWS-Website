@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Registration form </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.62074.js"></script>
+      <link rel="stylesheet" href="css/Registration.css">
+      <!-- <script src="form.js"></script> -->
+   </head>
+<body>
+
+  <div class="containers">
+     <header>
+        <img src="images/logo_middle.png" alt="School Logo" width="300" height="100" >
+          <div class="logo">
+           <img class= "title-logo" src="images/logo.png" alt="Nehru World School logo" height="100" width="100" >
+          </div>
+    </header>
+
+    <article id="contentstart">
+       <div class="container">
+         <button onclick="location.href=`Rashim_Kaushik94136_Nehru_WorldSchool.html`" class="btn btn-link">HomePage</button><br><br>
+        
+          <h3> Registration Form</h3>
+          <form class ="contact-form" action="file:///Users/rashimkaushik/Documents/Aptana%20Studio%203%20Workspace/Websites/results.html" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+           <h6>Note: All ‘*' marked fields are mandatory. Please mention 'NA’ if not applicable.</h6>
+          <br>
+          <h3> Student's Particular </h3>
+              <fieldset class="name">
+                <div id="name">
+                  <label> Name </label>
+                  <input type="text" id="fname" name="fname" placeholder="First name" required onkeyup="completePreview()">
+                  <input type="text" id="lname" name="lname" placeholder="Last name" required onkeyup="completePreview()">
+                </div>
+                <label for="dateinput">
+                   Date of Birth
+                   <input type="date" id="dateinput" name="date" placeholder="MMDDYYYY" required>
+                </label>
+                <br>
+                <label for="postioninput">
+                  For which grade you are applying?
+                  <select required>
+                     <option value="Blank">--Select Grade--</option required>
+                      <option value="PlayGroup">PlayGroup</option required>
+                      <option value="Pre Nursery">Pre Nursery</option required>
+                      <option value="Nursery">Nursery</option required>
+                      <option value="Junior Wing I to V">Junior Wing I to V</option required>
+                      <option value="Grade VI to VIII">Grade VI to VIII</option required>
+                      <option value="Senior Wing IX & X ">Senior Wing IX & X</option required>
+                      <option value="Senior Wing XI & XII">Senior Wing XI & XII</option required>
+                  </select>
+                </label>
+                <br><label for="Nationality">
+                  Select Nationality of Student :- <br>
+
+                   <div id="radio-group">
+
+                       <input type="radio" name="rg" checked="checked" >Indian
+                       <input type= "radio" name="rg">American<br>
+                       <input type="radio" name="rg">Africian
+                       <input type="radio" name="rg">Others<br>
+                   </div>
+                 </label>
+
+
+                 <label for="address">
+                    Residental Address
+                    <input type="textarea" id="address" name="url" placeholder="FlatNo/Block/Street/State" rows="7" cols="50" required>
+                 </label>
+              </fieldset>
+              <h3> Father's Particular </h3>
+              <fieldset class="father">
+                <div id="name">
+                  <label> Father's Name </label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="ffname" name="fname" placeholder="First name" required>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="flname" name="lname" placeholder="Last name" required>
+                </div>
+
+
+                <div id="droplist-group">
+                 <label for="Father's Occupation">
+                   Father's Occupation
+                   <select required>
+                      <option value="Blank">--Select Occupation--</option required>
+                       <option value="Service Man">Private Sector</option required>
+                       <option value="Govt Employee">Public Sector</option required>
+                       <option value="Business Man">Business</option required>
+                       <option value="Others">Others</option required>
+
+                   </select>
+                   </div>
+                   <label for="emailinput">
+                      Email Address.
+                      <input type="email" id="email" name="email" placeholder="address@email.com" required onkeyup="completePreview()">
+                   </label>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <label for="Mobile Number">
+                     Mobile Number.
+                     <input type="number" id="mobilenumber" name="mobilenumber" placeholder="10 digit Mobile number" required onkeyup="completePreview()">
+                 </fieldset>
+
+                   </fieldset>
+
+                   <h3> Mother's Particular </h3>
+                   <fieldset class="father">
+                     <div id="name">
+                       <label> Mother's Name
+                       <input type="text" id="ffname" name="mfname" placeholder="First name" required >
+                       <input type="text" id="flname" name="mlname" placeholder="Last name" required>
+                     </label>
+                </div>
+
+                <div id="droplist-group">
+                 <label for="Mother's Occupation">
+                   Mother's Occupation
+                   <select required>
+                       <option value="Blank">--Select Occupation--</option required>
+                       <option value="Private Sector">Private Sector</option required>
+                       <option value="Public Sector">Public Sector</option required>
+                       <option value="Business">Business</option required>
+                       <option value="Others">Others </option required>
+
+                   </select>
+                 </div>
+                 <label for="emailinput">
+                    Email
+                 <input type="email" id="email" name="email" placeholder="address@email.com" required >
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="Mobile Number">
+                      Mobile Number.
+                <input type="number" id="mobilenumber" name="mobilenumber" placeholder="10 digit Mobile number" required >
+                  </fieldset>
+                </label>
+              </fieldset>
+<h3> Other Information </h3>
+             <fieldset class="references">
+                <label for="refrencesinput">
+
+                  Do you have any Sibling in our School? <br>
+                  <div id="radio-group2">
+                   <input type="radio" onclick="javascript:yesnoCheck();" id="yesCheck" name="listreferences" value="yes" checked>Yes<br>
+                   <input type="radio" onclick="javascript:yesnoCheck();" id="noCheck" name="listreferences" value="no" > No<br>
+
+                </div>
+            </fieldset>
+
+            <div id="ifYes" >
+
+            <fieldset class="referencename">
+              <label for="fnameinput">
+                 Name
+                 <input type="text" id="fnameinputref" name="fname" placeholder="First name">
+              </label>
+              <label for="lnameinput">
+                <input type="text" id="lnameinputref" name="lname" placeholder="Last name">
+              </label>
+            </fieldset>
+
+            <fieldset class="referenceEmail">
+              <label for="emailinput">
+                 Email
+                 <input type="email" id="emailinputref" name="email" placeholder="address@example.com">
+              </label>
+            </fieldset>
+
+          </div>
+
+            <fieldset class="Transportation">
+               <label> Transportation Required  </label>
+               <label for="yes">
+                  <input type="radio" id="yesTransportaion" name="Transportation" value="yes">
+                  Yes
+               </label>
+               <label for="no">
+                  <input type="radio" id="noTransportation" name="Transportation" value="no">
+                  No
+               </label>
+               <br>
+             </fieldset>
+
+             <fieldset class="Physicalfit">
+                <label> Is Student physically challenged? If yes,please explian. </label>
+                <label for="yes">
+                   <input type="radio" id="yeslicense" name="license" value="yes">
+                   Yes
+                </label>
+                <label for="no">
+                   <input type="radio" id="nolicense" name="license" value="no">
+                   No
+                </label>
+                <br>
+                <textarea id="feedback2" name="feedback" rows="7" cols="50" ></textarea>
+              </fieldset>
+
+             <fieldset class="submitbutton">
+                <input type="submit" id="submit" value="Submit Registration" >
+             </fieldset>
+          </form>
+       </div>
+    </article>
+</div>
+
+<!-- /*javascript is been used to apply condition on radio button */ -->
+<script type="text/javascript">
+	function yesnoCheck() {
+
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else
+     document.getElementById('ifYes').style.visibility = 'hidden';
+
+}
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    /*height: auto;*/
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    background-color: floralwhite;
+
+}
+h1{
+  color: green;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn{
+ background-color: #FFF9C7;
+}
+header{
+ border-top: 1px solid gold !important;
+ margin-top: -8px !important;
+ background-color: #FFF9C7;
+ color: white;
+ width:100%;
+ background-size: 100px 200px;
+ background-repeat: no-repeat;
+ /*padding-left:20px;*/
+ position: center;
+ text-align: center;
+
+}
+
+h2{padding-left:3px;background-color:green; }
+</style>
+<title>NWS Gallery</title>
+</head>
+<header>
+        <img src="images/logo.png" alt="School logo" width="100" height="100" >
+          <div class="logo">
+           <img class= "title-logo" src="images/logo_middle.png" alt="Nehru World School logo" height="100" width="300" >
+          </div>
+
+    </header>
+<body>
+<div>
+<h2> Image Gallery</h2>
+<button onclick="location.href=`Rashim_Kaushik94136_Nehru_WorldSchool.html`" class="btn">HomePage</button><br><br>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Playground.jpg">
+      <img src="images/Playground.jpg" alt="Playground" width="300" height="200">
+    </a>
+    <div class="desc">Nehru World School basketball court</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Biotechlab.jpg">
+      <img src="images/Biotechlab.jpg" alt="3d Education" width="300" height="200">
+    </a>
+    <div class="desc">3d Education</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Skyfield.jpg">
+      <img src="images/Skyfield.jpg" alt="Skyfield" width="300" height="200">
+    </a>
+    <div class="desc">Skyfield Area</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/stageactivities.jpg">
+      <img src="images/stageactivities.jpg" alt="stageactivities" width="300" height="200">
+    </a>
+    <div class="desc">Stugents performing on stage.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/KinderGardenStudents.jpg">
+      <img src="images/KinderGardenStudents.jpg" alt="Kinder garden Students" width="300" height="200">
+    </a>
+    <div class="desc">Kinder Garden Students.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/children1.jpg">
+      <img src="images/children1.jpg" alt="Junior wing students" width="300" height="200">
+    </a>
+    <div class="desc">Junior Wing Students in class.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
